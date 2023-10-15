@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение алгоритмической задачи</title>
+    <script>
+        function calculateX() {
+            let a = parseFloat(document.getElementById("a").value);
+            let x;
+
+            if (a > 100) {
+                x = 0;
+            } else if (a < 61) {
+                x = a;
+            } else {
+                x = Math.pow(a, 4);
+            }
+
+            document.getElementById("result").innerHTML = "Значение x равно: " + x;
+        }
+    </script>
+
+</head>
+<body>
+       <!--Уникально содержание страницы-->
+        <h4 align="center">Решение алгоритмической задачи</h3>
+        <p id="task_content">Дано вещественное число A. Вычислить x = 0 при a > 100; x = a при a < 61, в противном случае x = a**4</p>
+        <label for="a">Введите число A:</label>
+        <input type="number" id="a" name="a">
+        <br>
+        <button onclick="calculateX()">Вычислить x</button>
+        <br>
+        <p>Результат: <span id="result"></span></p>
+    
+</body>
+</html>
