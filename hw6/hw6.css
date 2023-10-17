@@ -1,0 +1,25 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {clear:both; text-align:right; width: 120%;}
+label {float:left;}
+
+legend {
+    font-weight: 900;
+    color: rgb(1, 171, 171);
+}
+
+fieldset {
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.column {
+    float:left;
+}
